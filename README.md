@@ -1,2 +1,2 @@
 # gnuNify2019
-Contains files required for the workshop
+This repo contains files required for the workshop on 'Working with the Hindi WordNet API in Python'.
