@@ -1,0 +1,8 @@
+1. Download HWN API.
+2. Download HWN Offline and copy MorphIN and database directories to the HWN API directory.
+3. Modify the Examples.java file and replace the System.out.println lines with OutputStreamWriter and FileOutputStream with UTF8 encoding. Close the writer.
+4. pip install py4j
+6. Create a copy of Examples and save in a new directory. Also store the class file hierarchy of HWN in this directory.
+7. Compile the java file.
+8  jar cf MyJar.jar *
+9. Copy and Paste at the same level as that of the .py file.
