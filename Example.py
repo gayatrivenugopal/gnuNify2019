@@ -5,6 +5,9 @@ import csv
 import string
 from collections import Counter
 
+#import matplotlib
+#matplotlib.font_manager._rebuild()
+
 gateway = JavaGateway.launch_gateway(classpath="MyJar.jar")
 
 #import the Java class
@@ -45,6 +48,9 @@ def visualize():
 	frequency_dist = Counter(dict_words) #for counting objects - keys (elements) and count(values)
 	most_common = dict(frequency_dist.most_common(10))
 	plt.bar(most_common.keys(), most_common.values(), color='#FF4500')
+	
+	#plt.bar(range(len(most_common)), list(most_common.values()), color='#FF4500')
+	#plt.xticks(range(len(most_common)), list(most_common.keys()))
 	#plt.rcParams["figure.figsize"] = [16,9]
 	plt.show()
 
