@@ -1,8 +1,23 @@
-1. Download HWN API.
-2. Download HWN Offline and copy MorphIN and database directories to the HWN API directory.
-3. Modify the Examples.java file and replace the System.out.println lines with OutputStreamWriter and FileOutputStream with UTF8 encoding. Close the writer.
-4. pip install py4j
-6. Create a copy of Examples and save in a new directory. Also store the class file hierarchy of HWN in this directory.
-7. Compile the java file.
-8  jar cf MyJar.jar *
-9. Copy and Paste at the same level as that of the .py file.
+1. Download the Hindi WordNet API and the Hindi WordNet (http://www.cfilt.iitb.ac.in/wordnet/webhwn/).
+2. Copy MorphIN and database directories to the HWN API (JHWNL) directory.
+3. To run the java file: java cp JHWNL.jar:. Examples (on Linux). The commands to compile and run the file are present in the README.
+4. To write the output to a file, modify the Examples.java file and replace the System.out.println lines with writer.write, where
+writer is an instance of OutputStreamWriter. Use FileOutputStream with UTF8 encoding to open the file. Close the writer.
+5. To execute these Java files from the Python code, we need to create a jar file consisting of the HWN classes and our custom classes.
+6. Create a new directory next to HWN and JHWNL, let's say, Custom. Extract the JHWNL.jar into this directory.
+7. Create a copy of the Examples.java file in this directory. Modify this file according to your requirement.
+8. Ensure that the method is public and static.
+9. Compile this file from the Custom directory (javac Examples.java).
+10. Create a jar file that consists of the HWN classes and this custom class:
+jar cf MyJar.jar Examples.class in/
+11. Install py4j for the version of python that you are using.
+12. Move this file outside the Custom directory.
+13. Create the python file now.
+14. Import the py4j classes for launching the gateway and using the methods in the class (Example.py).
+15. Run the python file.
+
+In case you face any issue, my details are given below:
+Gayatri Venugopal
+gayatri.venugopal@sicsr.ac.in
+
+I am a faculty member at Symbiosis Institute of Computer Studies and Research, working in the area of NLP in Hindi.
