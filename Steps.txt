@@ -10,8 +10,8 @@ writer is an instance of OutputStreamWriter. Use FileOutputStream with UTF8 enco
 9. Compile this file from the Custom directory (javac Examples.java).
 10. Create a jar file that consists of the HWN classes and this custom class:
 jar cf MyJar.jar Examples.class in/
-11. Install py4j for the version of python that you are using.
-12. Move this file outside the Custom directory.
+11. Move this file outside the Custom directory.
+12. Install py4j for the version of python that you are using.
 13. Create the python file now.
 14. Import the py4j classes for launching the gateway and using the methods in the class (Example.py).
 15. Run the python file.
